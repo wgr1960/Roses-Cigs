@@ -1,0 +1,75 @@
+/**************************************************************
+Slide Show Selectors
+***************************************************************/
+.slide {
+	width: 80%;
+    height: inherit;
+    margin: 0 auto;
+    display: inline-block;
+}
+
+.slider {
+	height: inherit;
+    width: 7.5%;
+    display: inline-block;
+}
+
+#home-slider-space {
+	width: inherit;
+	height: inherit;
+}
+
+#slider-left {
+	float: left;
+}
+
+#slider-right {
+	float: right;
+}
+
+
+/**************************************************************
+Arrow Selectors
+***************************************************************/
+.arrow-container {
+	display: flex;
+	justify-content: center;
+	height: inherit;
+}
+
+.arrow {
+	align-self: center;
+	// position: absolute;
+	top: 50%;
+	width: 2rem;
+	height: 2rem;
+	background: transparent;
+	border-top: .4rem solid black;
+	border-right: .4rem solid black;
+	box-shadow: 0 0 0 lightgray;
+	transition: all 200ms ease;
+	
+	&.left {
+		left: 0;
+		transform: translate3d(0,-50%,0) rotate(-135deg);
+	}
+
+	&.right {
+		right: 0;
+		transform: translate3d(0,-50%,0) rotate(45deg);
+	}
+	
+	&:hover {
+		border-top: .4rem solid $roses-gold;
+		border-right: .4rem solid $roses-gold;
+		box-shadow: .2rem -.2rem 0 $roses-gold;
+
+		&.left {
+			left: -.2rem;
+		}
+
+		&.right {
+			right: -.2rem;
+		}
+	}
+}
