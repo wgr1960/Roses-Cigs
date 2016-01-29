@@ -5,7 +5,6 @@ Slide Show Selectors
 	width: 80%;
     height: inherit;
     margin: 0 auto;
-    display: inline-block;
 }
 
 .slider {
@@ -17,6 +16,18 @@ Slide Show Selectors
 #home-slider-space {
 	width: inherit;
 	height: inherit;
+}
+
+#slide1 {
+	display: inline-block;
+}
+
+#slide2 {
+	display: none;
+}
+
+#slide3 {
+	display: none;
 }
 
 #slider-left {
