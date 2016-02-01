@@ -20,10 +20,17 @@ Slide Show Selectors
 
 #slide1 {
 	display: inline-block;
+	background-image: url(../images/slide1.jpg);
+	background-size: cover;
 }
 
 #slide2 {
 	display: none;
+}
+
+#slide-content2 {
+	background-image: url(../images/album-cover.jpg);
+	background-size: cover;
 }
 
 #slide3 {

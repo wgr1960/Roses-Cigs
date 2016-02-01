@@ -288,6 +288,11 @@ CUSTOM SECTIONS
 	width: 100vw;
 	height: 100vh;
 	background-color: $roses-black;
+
+	.news-content {
+		width: inherit;
+		padding-right: 0;
+	}
 }
 
 #gigs {
@@ -298,8 +303,13 @@ CUSTOM SECTIONS
 	width: 100vw;
 	height: 100vh;
 	background-color: $roses-black;
-}
 
+	#gig-dates {
+		border: solid 1px $roses-gold;
+		width: 90%;
+    	margin: 0 auto;
+	}	
+}
 
 /*********************
 POSTS & CONTENT STYLES
@@ -307,6 +317,11 @@ POSTS & CONTENT STYLES
 
 #content {
 	margin-top: 1.5em;
+}
+
+#inner-content {
+	height: inherit;
+	overflow-y: scroll;
 }
 
 		.hentry {

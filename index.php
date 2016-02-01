@@ -4,15 +4,18 @@
 				<div id="home-slider-space">
 					<div id="slider-left" class="slider">
 						<div class="arrow-container">
-							<a href="#" id="slide-left" class="arrow left"></a>
+							<a href="#" id="slide-left" onClick="pageSlide(this.id)" class="arrow left"></a>
 						</div>
 					</div>
-					<div id="slide1" class="slide"><h1>SLIDE 1</h1></div>
-					<div id="slide2" class="slide"><h1>SLIDE 2</h1></div>
+					<div id="slide1" class="slide"></div>
+					<div id="slide2" class="slide">
+						<div id="slide-content2">
+						</div>
+					</div>
 					<div id="slide3" class="slide"><h1>SLIDE 3</h1></div>
 					<div id="slider-right" class="slider">
 						<div class="arrow-container">
-							<a href="#" id="slide-right" onClick="pageSlide()" class="arrow right"></a>
+							<a href="#" id="slide-right" onClick="pageSlide(this.id)" class="arrow right"></a>
 						</div>
 					</div>
 				</div>
@@ -22,7 +25,7 @@
 
 				<div id="inner-content" class="wrap cf">
 
-						<main id="main" class="m-all t-2of3 d-5of7 cf" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
+						<main id="main" class="news-content m-all t-2of3 d-5of7 cf" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
 
 							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
@@ -46,15 +49,15 @@
 									<?php the_content(); ?>
 								</section>
 
-								<footer class="article-footer cf">
+								<!-- <footer class="article-footer cf">
 									<p class="footer-comment-count">
-										<?php comments_number( __( '<span>No</span> Comments', 'bonestheme' ), __( '<span>One</span> Comment', 'bonestheme' ), __( '<span>%</span> Comments', 'bonestheme' ) );?>
-									</p>
+										<?php /*comments_number( __( '<span>No</span> Comments', 'bonestheme' ), __( '<span>One</span> Comment', 'bonestheme' ), __( '<span>%</span> Comments', 'bonestheme' ) );*/?>
+									</p> -->
 
 
-                 	<?php printf( '<p class="footer-category">' . __('filed under', 'bonestheme' ) . ': %1$s</p>' , get_the_category_list(', ') ); ?>
+                 	<?php /*printf( '<p class="footer-category">' . __('filed under', 'bonestheme' ) . ': %1$s</p>' , get_the_category_list(', ') );*/ ?>
 
-                  <?php the_tags( '<p class="footer-tags tags"><span class="tags-title">' . __( 'Tags:', 'bonestheme' ) . '</span> ', ', ', '</p>' ); ?>
+                  <?php /*the_tags( '<p class="footer-tags tags"><span class="tags-title">' . __( 'Tags:', 'bonestheme' ) . '</span> ', ', ', '</p>' );*/ ?>
 
 
 								</footer>
@@ -91,6 +94,25 @@
 			</div>
 
 			<div id="gigs">
+				<div id="gig-dates">
+					<a href="http://www.songkick.com/artists/8552809" class="songkick-widget" data-theme="dark" data-detect-style="true" data-font-color="#CCAD52" data-background-color="#000000">Roses & Cigarettes: F*CK CANCER SOCAL TOUR</a>
+					<script src="//widget.songkick.com/widget.js"></script>
+				</div>
+			</div>
+
+			<div id="about">
+			</div>
+
+			<div id="photos">
+			</div>
+
+			<div id="videos">
+			</div>
+
+			<div id="music">
+			</div>
+
+			<div id="contact">
 			</div>
 
 
