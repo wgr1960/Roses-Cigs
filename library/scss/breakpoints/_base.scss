@@ -280,7 +280,8 @@ CUSTOM SECTIONS
 }
 
 .news {
-	margin-top: 0 !important;
+	//margin-top: 0 !important;
+	overflow: auto;
 	position: relative;
 	padding-top: 170px;
 	width: 100%;
@@ -308,6 +309,34 @@ CUSTOM SECTIONS
 		border: solid 1px $roses-gold;
 		width: 90%;
     	margin: 0 auto;
+
+    	ul.tabs{
+			margin: 0px;
+			padding: 0px;
+			list-style: none;
+		}
+		ul.tabs li{
+			background: none;
+			color: #222;
+			display: inline-block;
+			padding: 10px 15px;
+			cursor: pointer;
+		}
+
+		ul.tabs li.current{
+			background: #ededed;
+			color: #222;
+		}
+
+		.tab-content{
+			display: none;
+			background: #ededed;
+			padding: 15px;
+		}
+
+		.tab-content.current{
+			display: inherit;
+		}
 	}	
 }
 
@@ -376,7 +405,6 @@ POSTS & CONTENT STYLES
 
 #inner-content {
 	height: inherit;
-	overflow-y: scroll;
 }
 
 		.hentry {

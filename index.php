@@ -95,8 +95,14 @@
 
 			<div id="gigs">
 				<div id="gig-dates">
-					<a href="http://www.songkick.com/artists/8552809" class="songkick-widget" data-theme="dark" data-detect-style="true" data-font-color="#CCAD52" data-background-color="#000000">Roses & Cigarettes: F*CK CANCER SOCAL TOUR</a>
-					<script src="//widget.songkick.com/widget.js"></script>
+					<ul class="tabs">
+						<li class="tab-link current" data-tab="tab-1">Upcoming Events</li>
+						<li class="tab-link" data-tab="tab-2">Past Events</li>
+					</ul>
+					<div id="tab-1" class="tab-content current">
+					</div>
+					<div id="tab-2" class="tab-content">
+					</div>
 				</div>
 			</div>
 
