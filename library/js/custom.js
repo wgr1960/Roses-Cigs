@@ -31,3 +31,4 @@ function pageSlide(clickedID) {
 }
 
 //setInterval(function() { pageSlide('slide-right') }, 20000);
+

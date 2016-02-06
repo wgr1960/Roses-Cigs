@@ -101,6 +101,10 @@
 			</div>
 
 			<div id="about">
+				<div id="about-content">
+					<h3>About</h3>
+					<p>Roses & Cigarettes formed in 2013 when the country cover band that Pagliaro was singing in auditioned Petrilli for a vacant guitar position.  The girls immediately bonded over their desire to perform original material and similar tastes in music - from the classics like Fleetwood Mac, the Eagles and Bonnie Raitt; to more contemporary artists like Patty Griffin, Sheryl Crow and Miranda Lambert.  It was a mutual love of singer-songwriter Ray LaMontagne and his song Roses and Cigarettes that inspired the name of the band.  Roses & Cigarette’s music is an eclectic blend of Roots, Country, Rock, Folk and Americana – the perfect recipe for the classic California sound.  Roses & Cigarettes self-titled debut album is available now on iTunes, Apple Music, Spotify and most other digital outlets</p>
+				</div>
 			</div>
 
 			<div id="photos">
