@@ -25,6 +25,34 @@ body {
   	-moz-osx-font-smoothing: grayscale;
 }
 
+/*********************
+FONT FAMILY
+*********************/
+
+@font-face{
+    font-family: "Burford-Rustic-Book-Bold";
+    src: url('../fonts/Burford-Rustic-Book-Bold.otf'),
+    url('../fonts/Burford-Rustic-Book-Bold.otf'); /* IE */
+}
+
+@font-face{
+    font-family: "Burford-Rustic-Shadow-One-A";
+    src: url('../fonts/Burford-Rustic-Shadow-One-A.otf'),
+    url('../fonts/Burford-Rustic-Shadow-One-A.otf'); /* IE */
+}
+
+@font-face{
+    font-family: "Burford-Rustic-Inline-Regular-2.otf";
+    src: url('../fonts/Burford-Rustic-Inline-Regular-2.otf'),
+    url('../fonts/Burford-Rustic-Inline-Regular-2.otf'); /* IE */
+}
+
+@font-face{
+    font-family: "Burford-Rustic-Line-Regular-2.otf";
+    src: url('../fonts/Burford-Rustic-Line-Regular-2.otf'),
+    url('../fonts/Burford-Rustic-Line-Regular-2.otf'); /* IE */
+}
+
 /********************
 WORDPRESS BODY CLASSES
 style a page via class
@@ -104,7 +132,7 @@ a, a:visited {
 }
 
 /******************************************************************
-H1, H2, H3, H4, H5 STYLES
+H1, H2, H3, H4, H5, P STYLES
 ******************************************************************/
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
@@ -124,12 +152,14 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
 h1, .h1 {
 	font-size: 2.5em;
 	line-height: 1.333em;
+	font-family: "Burford-Rustic-Shadow-One-A", Georgia, Serif;
 }
 
 h2, .h2 {
-	font-size: 1.75em;
+	font-size: 2em;
 	line-height: 1.4em;
 	margin-bottom: 0.375em;
+	font-family: "Burford-Rustic-Inline-Regular-2.otf", Georgia, Serif;
 }
 
 h3, .h3 {
@@ -146,6 +176,11 @@ h5, .h5 {
 	line-height: 2.09em;
 	text-transform: uppercase;
 	letter-spacing: 2px;
+}
+
+p {
+	font-size: 1.2em;
+	font-family: "Burford-Rustic-Line-Regular-2.otf", Georgia, Serif;
 }
 
 /*********************
@@ -280,8 +315,8 @@ CUSTOM SECTIONS
 }
 
 .news {
-	//margin-top: 0 !important;
 	overflow: auto;
+	margin-top: 0 !important;
 	position: relative;
 	padding-top: 170px;
 	width: 100%;
@@ -289,6 +324,7 @@ CUSTOM SECTIONS
 	width: 100vw;
 	height: 100vh;
 	background-color: $roses-black;
+	color: #fcaf17;
 
 	.news-content {
 		width: inherit;
@@ -298,7 +334,6 @@ CUSTOM SECTIONS
 
 #gigs {
 	position: relative;
-	padding-top: 255px;
 	width: 100%;
 	height: 100%;
 	width: 100vw;
@@ -342,57 +377,47 @@ CUSTOM SECTIONS
 
 #about {
 	position: relative;
-	padding-top: 340px;
 	width: 100%;
 	height: 100%;
 	width: 100vw;
 	height: 100vh;
 	background-color: $roses-black;
-
-	#about-content {
-		width: 60%;
-		margin: 0 auto;
-	}
+	color: #fcaf17;
 }
 
 #photos {
+	margin-top: 180px;
 	position: relative;
-	padding-top: 425px;
 	width: 100%;
 	height: 100%;
 	width: 100vw;
 	height: 100vh;
-	background-color: $roses-black;
+	background-color: #eb9a13;
+	color: $roses-black;
 }
 
 #videos {
 	position: relative;
-	padding-top: 510px;
 	width: 100%;
 	height: 100%;
 	width: 100vw;
 	height: 100vh;
 	background-color: $roses-black;
+	color: #fcaf17;
 }
 
 #music {
 	position: relative;
-	padding-top: 595px;
 	width: 100%;
 	height: 100%;
 	width: 100vw;
 	height: 100vh;
-	background-color: $roses-black;
+	background-color: #eb9a13;
+	color: $roses-black;
 }
 
-#contact {
-	position: relative;
-	padding-top: 680px;
-	width: 100%;
-	height: 100%;
-	width: 100vw;
-	height: 100vh;
-	background-color: $roses-black;
+#about p, #music p{
+	color: #cccccc;
 }
 
 /*********************

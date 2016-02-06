@@ -107,19 +107,57 @@
 			</div>
 
 			<div id="about">
-				<div id="about-content">
-					<h3>About</h3>
-					<p>Roses & Cigarettes formed in 2013 when the country cover band that Pagliaro was singing in auditioned Petrilli for a vacant guitar position.  The girls immediately bonded over their desire to perform original material and similar tastes in music - from the classics like Fleetwood Mac, the Eagles and Bonnie Raitt; to more contemporary artists like Patty Griffin, Sheryl Crow and Miranda Lambert.  It was a mutual love of singer-songwriter Ray LaMontagne and his song Roses and Cigarettes that inspired the name of the band.  Roses & Cigarette’s music is an eclectic blend of Roots, Country, Rock, Folk and Americana – the perfect recipe for the classic California sound.  Roses & Cigarettes self-titled debut album is available now on iTunes, Apple Music, Spotify and most other digital outlets</p>
+				<h1>About</h1>
+				<div>
+					<p>Roses & Cigarettes formed in 2013 when the country cover band that Pagliaro was signing in auditioned Petrilli for a vacant guitar position. The girls immediately
+					bonded over their desire to perform original material and similar tastes in music. From the classics like NWA, Dr. Dre, and 2Pac to more
+					contemporary artists like Drake, Fetty Wap, and DJ Khaled. It was a mutual love of singer-songwriter Ray LaMontagne and his song Roses and
+					Cigarettes that inspired the name of the band. Roses & Cigarettes' usic is an eclectic blend of Roots, Country, Rock, Folk, and Americana - the perfect recipe
+					for the classic California sound.</p>
+
+					<!-- <p>Roses & Cigarettes formed in 2013 when the country cover band that Pagliaro was signing in auditioned Petrilli for a vacant guitar position. The girls immediately
+					bonded over their desire to perform original material and similar tastes in music. From the classics like Fleetwood Mac, the Eagles and Bonnie Raitt; to more
+					contemporary artists like Patty Griffin, Sheryl Crow, and Miranda Lambert. It was a mutual love of singer-songwriter Ray LaMontagne and his song Roses and
+					Cigarettes that inspired the name of the band. Roses & Cigarettes' usic is an eclectic blend of Roots, Country, Rock, Folk, and Americana - the perfect recipe
+					for the classic California sound.</p> -->
+				</div>
+				<h2>Band Booking</h3>
+				<div>
+					<p>rosesandcigarettesband@gmail.com</p>
+				</div>
+				<h2>Press & Interviews</h3>
+				<div>
+					<p>Dedee Morse, Publicist @ M4PR</p>
+					<p>E: deedee@M4PR.com</p>
+					<p>C: 818.274.9098</p>
+					<p>O: 818.538.6477 (M4PR)</p>
+				</div>
+				<h2>Credits To</h3>
+				<div>
+					<p>Website: Bryan Cuevas & Willie Rodriguez</p>
+					<p>Photographers: James Conners & Rachel Evans & Dan Madsen</p>
 				</div>
 			</div>
 
 			<div id="photos">
+				<h1>Photos</h1>
+				<div id="gallery-feed">
+
+				</div>
 			</div>
 
 			<div id="videos">
+				<h1>Videos</h1>
+				<div id="gallery-feed">
+
+				</div>
 			</div>
 
 			<div id="music">
+				<h1>Music</h1>
+				<div id="gallery-feed">
+
+				</div>
 			</div>
 
 			<div id="contact">
