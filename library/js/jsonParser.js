@@ -1,5 +1,5 @@
-var upcomingHTMLTable	= "<table style='width: 100%'>";
-var pastHTMLTable	= "<table style='width: 100%'>";
+var upcomingHTMLTable	= "<div class='gigs-container'>";
+var pastHTMLTable		= "<div class='gigs-container'>";
 
 function formatDate(unformattedDate) {
 	var d = moment(unformattedDate, "YYYY-MM-DD");
@@ -21,10 +21,9 @@ jQuery.ajax({
 			var unformattedDate = upcomingEvents.resultsPage.results.event[i].start.date;
 			var formattedDate 	= formatDate(unformattedDate);
 
-			upcomingHTMLTable += 
-			"<tr><td>"+formattedDate+"</td><td>"+venueName+"</td><td>"+venueLocation+"</td><td>"+venueTickets+"</td></tr>";
+			upcomingHTMLTable 	+= "<div id='row'><div class='col date'>"+formattedDate+"</div><div class='col venue'>"+venueName+"</div><div class='col city'>"+venueLocation+"</div><div class='col tickets'><a href='"+venueTickets+"' class='action-button shadow animate yellow' target='_blank'>Tickets</a></div></div>";
 		}
-		upcomingHTMLTable += "</table>";
+		upcomingHTMLTable += "</div>";
 		document.getElementById("tab-1").innerHTML = upcomingHTMLTable;
 	}
 });
@@ -44,9 +43,9 @@ jQuery.ajax({
 			var formattedDate 	= formatDate(unformattedDate);
 
 			pastHTMLTable += 
-			"<tr><td>"+formattedDate+"</td><td>"+venueName+"</td><td>"+venueLocation+"</td><td>";
+			"<div id='row'><div class='col date'>"+formattedDate+"</div><div class='col venue'>"+venueName+"</div><div class='col city'>"+venueLocation+"</div></div>";
 		}
-		pastHTMLTable += "</table>";
+		pastHTMLTable += "</div>";
 		document.getElementById("tab-2").innerHTML = pastHTMLTable;
 	}
 });

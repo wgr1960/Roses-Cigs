@@ -22,8 +22,99 @@ be seen on the Desktop.
 	height: 85px;
 }
 
+.action-button {
+	float: right;
+}
+
 #roses-nav {
 	display: block;
 	float: right;
     padding: 20px;
 }
+
+#gig-dates {
+		width: 90%;
+		height: auto;
+    	margin: 0 auto;
+    	padding-top: 170px;
+    	padding-bottom: 170px;
+
+    	ul.tabs{
+			margin: 0px;
+			padding: 0px;
+			list-style: none;
+		}
+		ul.tabs li{
+			font-size: 2.5em !important;
+			font-family: "Burford-Rustic-Shadow-One-A", Georgia, Serif;
+			background: none;
+			color: #222;
+			display: inline-block;
+			padding: 10px 15px;
+			cursor: pointer;
+			border-top-left-radius: 40%;
+   			border-top-right-radius: 40%;
+		}
+
+		ul.tabs li.tab-link {
+			background-color: $roses-gold;
+		}
+
+		ul.tabs li.current{
+			background: $roses-black;
+			color: $roses-gold;
+		}
+
+		.tab-content{
+			display: none;
+			background: $roses-black;
+		}
+
+		.tab-content.current{
+			display: inherit;
+			opacity: 0.9;
+		}
+
+		#tab-1, #tab-2 {
+			//overflow: auto;
+			height: auto;
+		}
+
+		#row {
+		    display: -webkit-box !important;
+			display: -moz-box !important;
+			display: -ms-flexbox !important;
+			display: -webkit-flex !important;
+			display: flex !important;
+		    height: 5em !important;
+		    margin-bottom: 0 !important;
+		}
+
+		.col {
+			-webkit-box-flex: 1 !important;
+		    -moz-box-flex: 1 !important;
+		    width: 20% !important;
+		    -webkit-flex: 1 !important;
+		    -ms-flex: 1 !important;
+		    flex: 1 !important;
+		    height: 50px !important;
+		    line-height: 50px !important;
+		}
+
+		.date {
+	    	text-align: left !important;
+	    }
+
+	    .venue {
+	    	text-align: left !important;
+	    }
+
+	    .city {
+	    	padding-left: 100px !important;
+	    	text-align: left !important;
+	    }
+
+	    .tickets {
+	    	text-align: right !important;
+	    }
+	}	

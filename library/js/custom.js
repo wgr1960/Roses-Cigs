@@ -32,3 +32,44 @@ function pageSlide(clickedID) {
 
 //setInterval(function() { pageSlide('slide-right') }, 20000);
 
+/*******************************
+CUSTOM JUMPER
+*******************************/
+var scrollValue = 0;
+$(function() {
+	$("#menu-nav-links > li > a").addClass('jumper');
+	
+
+	$(".jumper").on("click", function( e ) {
+
+        e.preventDefault();
+        var clickedLink = $(this).html();
+
+        if(clickedLink == "News") {
+        	scrollValue = 170;
+        }
+        else if(clickedLink == "Gigs") {
+        	scrollValue = 255;
+        }
+        else if(clickedLink == "About") {
+        	scrollValue = 340;
+        }
+        else if(clickedLink == "Photos") {
+        	scrollValue = 425;
+        }
+        else if(clickedLink == "Videos") {
+        	scrollValue = 510;
+        }
+        else if(clickedLink == "Music") {
+        	scrollValue = 595;
+        }
+        else if(clickedLink == "Contact") {
+        	scrollValue = 680;
+        }
+
+        $("body, html").animate({ 
+           scrollTop: $( $(this).attr('href') ).offset().top 
+        }, scrollValue);
+    });
+});
+
