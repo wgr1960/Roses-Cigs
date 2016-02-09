@@ -23,7 +23,9 @@
 
 			<div id="content" class="news">
 					<div id="inner-content" class="wrap cf">
-
+						<div class="header-container">
+							<h1>News</h1>
+						</div>
 							<main id="main" class="news-content m-all t-2of3 d-5of7 cf" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
 
 								<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
@@ -118,26 +120,61 @@
 			</div>
 
 			<div id="photos">
-				<h1>Photos</h1>
-				<div id="gallery-feed">
-
+				<div id="photos-content">
+					<div class="header-container">
+						<h1>Photos</h1>
+					</div>
 				</div>
 			</div>
 
 			<div id="videos">
-				<h1>Videos</h1>
-				<div id="gallery-feed">
-
+				<div id="video-content">
+					<div class="header-container">
+						<h1>Videos</h1>
+					</div>
 				</div>
+				
+<!-- 				<div id="video-slider-space">
+					<div id="slider-left" class="slider">
+						<div class="arrow-container">
+							<a href="#" id="slide-left" onClick="pageSlide(this.id)" class="arrow left"></a>
+						</div>
+					</div>
+					<div id="slide1" class="slide">				
+						<iframe id="video" width="100%" height="100%" src="https://www.youtube.com/embed/2Rj7WG3eSDo" frameborder="0" allowfullscreen></iframe>	
+					</div>
+					<div id="slide2" class="slide">
+						<div id="slide-content2">
+						</div>
+					</div>
+					<div id="slide3" class="slide"></div>
+					<div id="slider-right" class="slider">
+						<div class="arrow-container">
+							<a href="#" id="slide-right" onClick="pageSlide(this.id)" class="arrow right"></a>
+						</div>
+					</div>
+				</div> -->
 			</div>
 
 			<div id="music">
-				<h1>Music</h1>
-				<div id="gallery-feed">
+				<div id="music-content">
+					<div class="header-container">
+						<h1>Music</h1>
+					</div>
+					<div class="album-cover">
+						<img id="album-img" src="wp-content/themes/Roses-Cigs-master/library/images/album_cover.jpg" alt="Roses & Cigarettes - Self-Titled Album Cover"/>
+					</div>
+					<div class="album-info">
+						<p>The self-titled debut Roses & Cigarettes is out now.</p>
+						<p>Featuring "Whiskey Down", "Gypsy Woman",</p>
+						<p>& "Laurel Canyon"</p>
+						<button id="roses-button">Buy Now</button>
+					</div>
 
-				</div>
-			</div>
-
+<!-- 					<iframe id="spotify_player" alt="Roses & Cigarettes - Spotify Player" src="https://embed.spotify.com/?uri=spotify:artist:2JZd7083SkKl8xV7zS2xIS" width="300" height="380" frameborder="0" allowtransparency="true"></iframe> -->
+<!-- 				</div>
+ -->			</div>
+ 			</div>
 			<div id="contact">
 			</div>
 
