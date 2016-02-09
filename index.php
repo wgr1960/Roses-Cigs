@@ -2,22 +2,9 @@
 
 			<div id="home">
 				<div id="home-slider-space">
-					<div id="slider-left" class="slider">
-						<div class="arrow-container">
-							<a href="#" id="slide-left" onClick="pageSlide(this.id)" class="arrow left"></a>
-						</div>
-					</div>
-					<div id="slide1" class="slide"></div>
-					<div id="slide2" class="slide">
-						<div id="slide-content2">
-						</div>
-					</div>
-					<div id="slide3" class="slide"><h1>SLIDE 3</h1></div>
-					<div id="slider-right" class="slider">
-						<div class="arrow-container">
-							<a href="#" id="slide-right" onClick="pageSlide(this.id)" class="arrow right"></a>
-						</div>
-					</div>
+					<div id="slide-1"><h1>SLIDE 1</h1></div>
+					<div id="slide-2"><h1>SLIDE 2</h1></div>
+					<div id="slide-3"><h1>SLIDE 3</h1></div>
 				</div>
 			</div>
 
