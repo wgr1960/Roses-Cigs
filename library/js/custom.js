@@ -6,6 +6,7 @@ $(document).ready(function() {
     $('#video-slides').superslides()
 });
 
+<<<<<<< HEAD
 // $(document).ready(function() {
 //     $('#home-slider-space').slick({
 //         adaptiveHeight: true,
@@ -46,6 +47,8 @@ $(document).ready(function() {
 
 // //setInterval(function() { pageSlide('slide-right') }, 20000);
 
+=======
+>>>>>>> master
 /*******************************
 CUSTOM JUMPER
 *******************************/
@@ -87,3 +90,13 @@ $(function() {
     });
 });
 
+$('.menu-btn').on('click', function() {
+    $(this).toggleClass('animate');
+    $('#mobile-menu').toggle();
+    if($('#mobile-menu:visible').size() != 0) {
+        $('#mobile-menu').addClass('menu-animate-fade-in');
+    }
+    else {
+        $('#mobile-menu').removeClass('menu-animate-fade-out');
+    }
+});

@@ -72,7 +72,17 @@
 						)); ?>
 
 					</nav>
-
+					<div class="menu-btn"></div>
 				</div>
-
 			</header>
+			<div id="mobile-menu">
+				<ul>
+					<li>Home</li>
+					<li>News</li>
+					<li>Gigs</li>
+					<li>About</li>
+					<li>Photos</li>
+					<li>Videos</li>
+					<li>Contact</li>
+				</ul>
+			</div>
