@@ -41,6 +41,20 @@ the whole project.
 // the grid
 @import "partials/grid";
 
+
+/*********************
+IMPORTING FONTS
+F
+*********************/
+
+@import "fonts/ionicons";
+
+@import "fonts/ionicons-variables";
+
+@import "fonts/ionicons-icons";
+
+@import "fonts/ionicons-font";
+
 /*********************
 IMPORTING MODULES
 Modules are reusable blocks or elements we use throughout the project.
@@ -59,8 +73,14 @@ you hate oysters, then the world is your peanut butter & jelly sandwich.
 @import "modules/forms";
 
 // slide show
-@import "modules/slider";
+//@import "modules/slider";
 
+// SLICK SLIDER
+//@import "modules/slick";
+
+//@import "modules/_slick-theme";
+//SuperSlides
+@import "modules/_superslides";
 /*********************
 BASE (MOBILE) SIZE
 This are the mobile styles. It's what people see on their phones. If

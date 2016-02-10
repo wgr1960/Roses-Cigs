@@ -1,36 +1,50 @@
 /*******************************
 CUSTOM CAROUSEL
 *******************************/
+$(document).ready(function() {
+    $('#slides').superslides()
+    $('#video-slides').superslides()
+});
 
-var currentSlide = 1;
+// $(document).ready(function() {
+//     $('#home-slider-space').slick({
+//         adaptiveHeight: true,
+//         centerMode: true,
+//         mobileFirst: true,
+//         slidesToShow: 1,
+//         slidesToScroll: 1
+//       });
+// });
 
-function pageSlide(clickedID) {
-	var slide = "slide" + currentSlide;
+// var currentSlide = 1;
 
-	if(clickedID == 'slide-right') {
-		document.getElementById(slide).style.display = "none";
-		if(currentSlide == 3) {
-			currentSlide = 1;
-		}
-		else {
-			currentSlide += 1;
-		}
-	}
-	else if(clickedID == 'slide-left') {
-		document.getElementById(slide).style.display = "none";
-		if(currentSlide == 1) {
-			currentSlide = 3;
-		}
-		else {
-			currentSlide -= 1;
-		}
-	}
-	slide = "slide" + currentSlide;
-	console.log(slide);	
-	document.getElementById(slide).style.display = "inline-block";
-}
+// function pageSlide(clickedID) {
+// 	var slide = "slide" + currentSlide;
 
-//setInterval(function() { pageSlide('slide-right') }, 20000);
+// 	if(clickedID == 'slide-right') {
+// 		document.getElementById(slide).style.display = "none";
+// 		if(currentSlide == 3) {
+// 			currentSlide = 1;
+// 		}
+// 		else {
+// 			currentSlide += 1;
+// 		}
+// 	}
+// 	else if(clickedID == 'slide-left') {
+// 		document.getElementById(slide).style.display = "none";
+// 		if(currentSlide == 1) {
+// 			currentSlide = 3;
+// 		}
+// 		else {
+// 			currentSlide -= 1;
+// 		}
+// 	}
+// 	slide = "slide" + currentSlide;
+// 	console.log(slide);	
+// 	document.getElementById(slide).style.display = "inline-block";
+// }
+
+// //setInterval(function() { pageSlide('slide-right') }, 20000);
 
 /*******************************
 CUSTOM JUMPER

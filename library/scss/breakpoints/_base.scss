@@ -225,7 +225,7 @@ and more scalable.
 */
 
 #roses-nav {
-	display: none;
+	display: block;
 }
 
 .nav {
@@ -306,7 +306,7 @@ CUSTOM SECTIONS
 
 #home {
 	position: relative;
-	top: 85px;
+	top: 84px;
 	width: 100%;
 	height: 100%;
 	width: 100vw;
@@ -315,6 +315,8 @@ CUSTOM SECTIONS
 }
 
 .news {
+	background: linear-gradient(rgba(32, 29, 22, 0.95), rgba(32, 29, 22, 0.95)), url('../images/rustic-texture.png') no-repeat;
+	background-size: 100% 100%;
 	overflow: auto;
 	margin-top: 0 !important;
 	position: relative;
@@ -322,7 +324,6 @@ CUSTOM SECTIONS
 	height: 100%;
 	width: 100vw;
 	height: 100vh;
-	background-color: $roses-black;
 	color: #fcaf17;
 	margin: 0 auto;
 
@@ -360,7 +361,7 @@ CUSTOM SECTIONS
 			list-style: none;
 		}
 		ul.tabs li{
-			font-size: 1.5em;
+			font-size: 1.2em;
 			font-family: "Burford-Rustic-Shadow-One-A", Georgia, Serif;
 			background: none;
 			color: #222;
@@ -458,7 +459,7 @@ CUSTOM SECTIONS
 	height: 100%;
 	width: 100vw;
 	height: 100vh;
-	background-color: #eb9a13;
+	background-color: #C0892A;
 	color: $roses-black;
 	margin: 0 auto;
 
@@ -474,7 +475,7 @@ CUSTOM SECTIONS
 	width: 100%;
 	height: 100%;
 	width: 100vw;
-	height: 100vh;
+	//height: 100vh;
 	background-color: $roses-black;
 	color: #fcaf17;
 	margin: 0 auto;
@@ -485,6 +486,23 @@ CUSTOM SECTIONS
 		height: inherit;
 	}
 
+	#video-slides {
+		height: 510px;
+	
+		ul {
+			text-align: center;
+			
+			li {
+				iframe, object, embed {
+					position:absolute;
+					top:0;
+					left:0;
+					width:100%;
+					height:100%;
+				}
+			}	
+		} 
+	}
 }
 
 #music {
@@ -493,7 +511,7 @@ CUSTOM SECTIONS
 	height: 100%;
 	width: 100vw;
 	height: 100vh;
-	background-color: #eb9a13;
+	background-color: #C0892A;
 	color: $roses-black;
 	margin: 0 auto;
 
@@ -557,6 +575,34 @@ CUSTOM SECTIONS
 	font-size: 1.5em;
 }
 
+
+/*********************
+SLIDER STYLES
+*********************/
+
+#slide-1, #slide-2, #slide-3 {
+	max-width: 100%;
+	max-height: 100%;
+	background: url('../images/r_c_slide1.jpg') no-repeat;
+	background-size: 100% 100%;
+}
+
+.slides-navigation a.prev {
+	left: 25px;
+}
+
+.slides-navigation a.next {
+	right: 25px;
+}
+a.prev, a.next {
+	font-size: 80px;
+
+}
+
+a.prev:visited, a.next:visited {
+	color: #fcaf17;
+}
+
 /*********************
 POSTS & CONTENT STYLES
 *********************/
@@ -573,10 +619,11 @@ POSTS & CONTENT STYLES
 }
 
 		.hentry {
-			background-color: $white;
+			background-color: #473F1C;
 			border-radius: 3px;
 			margin-bottom: 1.5em;
-			border: 1px solid $border-color;
+			border: 1px solid #C0892A;
+			box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);	
 
 			header {
 				border-bottom: 1px solid $light-gray;
@@ -633,6 +680,7 @@ POSTS & CONTENT STYLES
 
 			p {
 				margin: 0 0 1.5em;
+				font-size: 1.4em;
 			}
 
 

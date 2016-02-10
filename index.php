@@ -1,23 +1,19 @@
 <?php get_header(); ?>
 
 			<div id="home">
-				<div id="home-slider-space">
-					<div id="slider-left" class="slider">
-						<div class="arrow-container">
-							<a href="#" id="slide-left" onClick="pageSlide(this.id)" class="arrow left"></a>
-						</div>
-					</div>
-					<div id="slide1" class="slide"></div>
-					<div id="slide2" class="slide">
-						<div id="slide-content2">
-						</div>
-					</div>
-					<div id="slide3" class="slide"><h1>SLIDE 3</h1></div>
-					<div id="slider-right" class="slider">
-						<div class="arrow-container">
-							<a href="#" id="slide-right" onClick="pageSlide(this.id)" class="arrow right"></a>
-						</div>
-					</div>
+				<div id="slides">
+				  <ul class="slides-container">
+				    <li id="slide-1">
+				    </li>
+				    <li id="slide-2"> 
+				    </li>
+				    <li id="slide-3">
+				    </li>
+				  </ul>
+				  <nav class="slides-navigation">
+				    <a href="#" class="next"><i class="ionicons ion-chevron-right"></i></a>
+				    <a href="#" class="prev"><i class="ionicons ion-chevron-left"></i></a>
+				  </nav>
 				</div>
 			</div>
 
@@ -133,27 +129,24 @@
 						<h1>Videos</h1>
 					</div>
 				</div>
-				
-<!-- 				<div id="video-slider-space">
-					<div id="slider-left" class="slider">
-						<div class="arrow-container">
-							<a href="#" id="slide-left" onClick="pageSlide(this.id)" class="arrow left"></a>
-						</div>
-					</div>
-					<div id="slide1" class="slide">				
-						<iframe id="video" width="100%" height="100%" src="https://www.youtube.com/embed/2Rj7WG3eSDo" frameborder="0" allowfullscreen></iframe>	
-					</div>
-					<div id="slide2" class="slide">
-						<div id="slide-content2">
-						</div>
-					</div>
-					<div id="slide3" class="slide"></div>
-					<div id="slider-right" class="slider">
-						<div class="arrow-container">
-							<a href="#" id="slide-right" onClick="pageSlide(this.id)" class="arrow right"></a>
-						</div>
-					</div>
-				</div> -->
+
+				<div id="video-slides">
+				  <ul class="slides-container">
+				    <li>
+				    	<iframe width="854" height="480" src="https://www.youtube.com/embed/Tx_Un9s21Wk" frameborder="0" allowfullscreen></iframe>
+				    </li>
+				    <li> 
+				    	<iframe width="854" height="480" src="https://www.youtube.com/embed/Tx_Un9s21Wk" frameborder="0" allowfullscreen></iframe>
+				    </li>
+				    <li>
+				    	<iframe width="854" height="480" src="https://www.youtube.com/embed/Tx_Un9s21Wk" frameborder="0" allowfullscreen></iframe>
+				    </li>
+				  </ul>
+				  <nav class="slides-navigation">
+				    <a href="#" class="next"><i class="ionicons ion-chevron-right"></i></a>
+				    <a href="#" class="prev"><i class="ionicons ion-chevron-left"></i></a>
+				  </nav>
+				</div>
 			</div>
 
 			<div id="music">
