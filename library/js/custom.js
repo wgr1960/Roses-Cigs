@@ -6,49 +6,7 @@ $(document).ready(function() {
     $('#video-slides').superslides()
 });
 
-<<<<<<< HEAD
-// $(document).ready(function() {
-//     $('#home-slider-space').slick({
-//         adaptiveHeight: true,
-//         centerMode: true,
-//         mobileFirst: true,
-//         slidesToShow: 1,
-//         slidesToScroll: 1
-//       });
-// });
 
-// var currentSlide = 1;
-
-// function pageSlide(clickedID) {
-// 	var slide = "slide" + currentSlide;
-
-// 	if(clickedID == 'slide-right') {
-// 		document.getElementById(slide).style.display = "none";
-// 		if(currentSlide == 3) {
-// 			currentSlide = 1;
-// 		}
-// 		else {
-// 			currentSlide += 1;
-// 		}
-// 	}
-// 	else if(clickedID == 'slide-left') {
-// 		document.getElementById(slide).style.display = "none";
-// 		if(currentSlide == 1) {
-// 			currentSlide = 3;
-// 		}
-// 		else {
-// 			currentSlide -= 1;
-// 		}
-// 	}
-// 	slide = "slide" + currentSlide;
-// 	console.log(slide);	
-// 	document.getElementById(slide).style.display = "inline-block";
-// }
-
-// //setInterval(function() { pageSlide('slide-right') }, 20000);
-
-=======
->>>>>>> master
 /*******************************
 CUSTOM JUMPER
 *******************************/
@@ -92,11 +50,5 @@ $(function() {
 
 $('.menu-btn').on('click', function() {
     $(this).toggleClass('animate');
-    $('#mobile-menu').toggle();
-    if($('#mobile-menu:visible').size() != 0) {
-        $('#mobile-menu').addClass('menu-animate-fade-in');
-    }
-    else {
-        $('#mobile-menu').removeClass('menu-animate-fade-out');
-    }
+    $('#mobile-menu').fadeToggle(500);
 });
