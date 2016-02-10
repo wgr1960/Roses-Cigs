@@ -26,10 +26,21 @@ be seen on the Desktop.
 	float: right;
 }
 
+header.header {
+	display: block;
+}
+
 #roses-nav {
 	display: block;
 	float: right;
     padding: 20px;
+}
+
+
+
+
+.menu-btn {
+	display: none;
 }
 
 #gig-dates {
