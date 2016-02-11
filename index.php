@@ -18,9 +18,10 @@
 			</div>
 
 			<div id="content" class="news">
+				<div class="scrollbox wrap">
+				<h1>News</h1>
 					<div id="inner-content" class="wrap cf">
 						<div class="header-container">
-							<h1>News</h1>
 						</div>
 							<main id="main" class="news-content m-all t-2of3 d-5of7 cf" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
 
@@ -87,6 +88,7 @@
 						<?php get_sidebar(); ?>
 
 					</div>
+				</div>
 			</div>
 
 			<div id="gigs">

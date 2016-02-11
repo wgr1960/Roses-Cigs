@@ -228,76 +228,17 @@ HEADER STYLES
     }
 
     ul li {
-    	padding: 15px 0 15px 0;
+    	padding: 30px 0 30px 0;
+    	font-size: 3.5em;
+    	font-family: $rustic-font;
+
+    	a {
+    		&:visited {
+    			color: $roses-gold;
+    		}
+    	}
     }
 }
-
-// .menu-animate-fade-in {
-// 	-webkit-animation: fade-in 0.5s ease-in;
-// 	-moz-animation: fade-in 0.5s ease-in;
-// 	-ms-animation: fade-in 0.5s ease-in;
-// 	-o-animation: fade-in 0.5s ease-in;
-// 	animation: fade-in 0.5s ease-in;
-// }
-
-// .menu-animate-fade-out {
-// 	-webkit-animation: fade-out 0.5s ease-in;
-// 	-moz-animation: fade-out 0.5s ease-in;
-// 	-ms-animation: fade-out 0.5s ease-in;
-// 	-o-animation: fade-out 0.5s ease-in;
-// 	animation: fade-out 0.5s ease-in;
-// }
-
-// @keyframes fade-in {
-// 	from { opacity: 0; }
-// 	to { opacity: 1; }
-// }
-
-// @-webkit-keyframes fade-in {
-// 	from { opacity:0; }
-// 	to { opacity: 1; }
-// }
-
-// @-moz-keyframes fade-in {
-// 	from { opacity:0; }
-// 	to { opacity: 1; }
-// }
-
-// @-o-keyframes fade-in {
-// 	from { opacity:0; }
-// 	to { opacity: 1; }
-// }
-
-// @-ms-keyframes fade-in {
-// 	from { opacity:0; }
-// 	to { opacity: 1; }
-// }
-
-// @keyframes fade-out {
-// 	from { opacity: 1; }
-// 	to { opacity: 0; }
-// }
-
-// @-webkit-keyframes fade-out {
-// 	from { opacity:1; }
-// 	to { opacity: 0; }
-// }
-
-// @-moz-keyframes fade-out {
-// 	from { opacity:1; }
-// 	to { opacity: 0; }
-// }
-
-// @-o-keyframes fade-out {
-// 	from { opacity:1; }
-// 	to { opacity: 0; }
-// }
-
-// @-ms-keyframes fade-out {
-// 	from { opacity:1; }
-// 	to { opacity: 0; }
-// }
-
 
 .menu-btn {
 	cursor: pointer;
@@ -438,15 +379,15 @@ CUSTOM SECTIONS
 .news {
 	background: linear-gradient(rgba(32, 29, 22, 0.95), rgba(32, 29, 22, 0.95)), url('../images/rustic-texture.png') no-repeat;
 	background-size: 100% 100%;
-	overflow: auto;
 	margin-top: 0 !important;
 	position: relative;
 	width: 100%;
-	height: 100%;
+	min-height: 100%;
 	width: 100vw;
-	height: 100vh;
+	min-height: 100vh;
 	color: #fcaf17;
 	margin: 0 auto;
+	padding-top: 170px;
 
 
 	.news-content {
@@ -455,7 +396,7 @@ CUSTOM SECTIONS
 	}
 
 	#inner-content {
-		padding-top: 170px;
+		
 	}
 }
 
@@ -527,6 +468,10 @@ CUSTOM SECTIONS
 		    font-size: 25px;
 		    font-family: $rustic-font;
 		    color: $roses-content;
+
+		    &:hover {
+		    	background-color: $roses-hover;
+		    }
 		}
 
 		.col {
@@ -735,12 +680,22 @@ POSTS & CONTENT STYLES
 	margin-top: 1.5em;
 }
 
+.scrollbox {
+	margin: 0 auto;
+	overflow: auto;
+	height: 100vh;
+
+	&:web-kit-scrollbar-track {
+		background-color: $roses-blacker;
+	}
+}
+
 #inner-content {
 	height: inherit;
 }
 
 		.hentry {
-			background-color: #473F1C;
+			background-color: $roses-blacker;
 			border-radius: 3px;
 			margin-bottom: 1.5em;
 			border: 1px solid #C0892A;

@@ -52,3 +52,8 @@ $('.menu-btn').on('click', function() {
     $(this).toggleClass('animate');
     $('#mobile-menu').fadeToggle(500);
 });
+
+$('.mobile-link').on('click', function() {
+    $('#mobile-menu').fadeOut(400);
+    $('.menu-btn').toggleClass('animate');
+});
