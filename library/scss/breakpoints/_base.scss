@@ -53,47 +53,6 @@ FONT FAMILY
     url('../fonts/Burford-Rustic-Line-Regular-2.otf'); /* IE */
 }
 
-/********************
-WORDPRESS BODY CLASSES
-style a page via class
-********************/
-
-.rtl {}                           /* for sites that are read right to left (i.e. hebrew) */
-.home {}                          /* home page */
-.blog {}                          /* blog template page */
-.archive {}                       /* archive page */
-.date {}                          /* date archive page */
-	.date-paged-1 {}                /* replace the number to the corresponding page number */
-.search {}                        /* search page */
-	.search-results {}              /* search result page */
-	.search-no-results {}           /* no results search page */
-	.search-paged-1 {}              /* individual paged search (i.e. body.search-paged-3) */
-.error404 {}                      /* 404 page */
-.single {}                        /* single post page */
-	.postid-1 {}                    /* individual post page by id (i.e. body.postid-73) */
-	.single-paged-1 {}              /* individual paged single (i.e. body.single-paged-3) */
-.attachment {}                    /* attatchment page */
-	.attachmentid-1 {}              /* individual attatchment page (i.e. body.attachmentid-763) */
-	.attachment-mime-type {}        /* style mime type pages */
-.author {}                        /* author page */
-	.author-nicename {}             /* user nicename (i.e. body.author-samueladams) */
-	.author-paged-1 {}              /* paged author archives (i.e. body.author-paged-4) for page 4 */
-.category {}                      /* category page */
-	.category-1 {}                  /* individual category page (i.e. body.category-6) */
-	.category-paged-1 {}            /* replace the number to the corresponding page number */
-.tag {}                           /* tag page */
-	.tag-slug {}                    /* individual tag page (i.e. body.tag-news) */
-	.tag-paged-1 {}                 /* replace the number to the corresponding page number */
-.page-template {}                 /* custom page template page */
-	.page-template-page-php {}      /* individual page template (i.e. body.page-template-contact-php */
-	.page-paged-1 {}                /* replace the number to the corresponding page number */
-	.page-parent {}                 /* parent page template */
-	.page-child {}                  /* child page template */
-	.parent-pageid-1 {}             /* replace the number to the corresponding page number */
-.logged-in {}                     /* if user is logged in */
-.paged {}                         /* paged items like search results or archives */
-	.paged-1 {}                     /* individual paged (i.e. body.paged-3) */
-
 /*********************
 LAYOUT & GRID STYLES
 *********************/
@@ -368,7 +327,7 @@ CUSTOM SECTIONS
 
 #home {
 	position: relative;
-	top: 84px;
+	top: 85px;
 	width: 100%;
 	height: 100%;
 	width: 100vw;
@@ -393,10 +352,6 @@ CUSTOM SECTIONS
 	.news-content {
 		width: inherit;
 		padding-right: 0;
-	}
-
-	#inner-content {
-		
 	}
 }
 
@@ -506,7 +461,6 @@ CUSTOM SECTIONS
 	min-height: 100vh;
 	background-color: $roses-black;
 	color: #fcaf17;
-
 	background: $gradient, url("../images/about-background2.jpg") no-repeat;
 	background-size: 100% 100%;
 
@@ -571,20 +525,49 @@ CUSTOM SECTIONS
 	}
 }
 
-#music {
-	position: relative;
-	width: 100%;
-	height: 100%;
-	width: 100vw;
-	height: 100vh;
-	background-color: #C0892A;
-	color: $roses-black;
-	margin: 0 auto;
+#music-content {
+	width: inherit;
+	height: inherit;
+	padding-top: 100px;
 
-	#music-content {
-		width: 80%;
-		margin: 0 auto;
-		height: inherit;
+	.album-cover {
+		float: left;
+	}
+
+	.album-info {
+		float: right;
+		margin-top: 100px;
+		text-align: center;
+
+		#album-buttons {
+			width: 75%;
+			height: 100px;
+			display: block;
+    		margin: 0 auto;
+
+			#spotify, #itunes {
+				display: static !important;
+    			height: 100px !important;
+    			width: 268px !important;
+    			top: 0 !important;
+    			left: 0!important;
+    			position: relative !important;
+			}
+		}
+	}
+
+	.album-cover, .album-info {
+		width: 100%;
+
+		#album-img {
+			margin: 0 auto;
+			display: block !important;
+    		height: 482px !important;
+    		width: 400px !important;
+    		top: 0 !important;
+    		left: 0!important;
+    		position: relative !important;
+		}
 	}
 }
 
@@ -594,27 +577,6 @@ CUSTOM SECTIONS
 
 .action-button {
 	float: none;
-}
-.album-info, .album_cover {
-	width: 50%;
-	height: 100%;
-}
-
-.album-cover {
-	float: left;
-}
-
-.album-info {
-	float: right;
-	margin-top: 100px;
-}
-#album-img {
-	height:	482px;
-	width: 400px;
-}
-
-#album-img, #spotify_player, #video {
-	box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);	
 }
 
 #video {
@@ -646,10 +608,10 @@ CUSTOM SECTIONS
 SLIDER STYLES
 *********************/
 
-#slide-1, #slide-2, #slide-3 {
+#slide-1, #slide-3 {
 	max-width: 100%;
 	max-height: 100%;
-	background: url('../images/r_c_slide1.jpg') no-repeat;
+	background: url('../images/r_c_slide1-m.jpg') no-repeat;
 	background-size: 100% 100%;
 }
 
@@ -685,9 +647,6 @@ POSTS & CONTENT STYLES
 	overflow: auto;
 	height: 100vh;
 
-	&:web-kit-scrollbar-track {
-		background-color: $roses-blacker;
-	}
 }
 
 #inner-content {
@@ -1263,39 +1222,14 @@ COMMENT FORM STYLES
 SIDEBARS & ASIDES
 *********************/
 
-.sidebar {}
-
-	.widgettitle {}
-
-	.widget {
-
-		ul {
-
-			li {
-
-				&:first-child {}
-
-				&:last-child {}
-
-				a {}
-
-				/* deep nesting */
-				ul {}
-
-			}
-
-		}
-
-	}
-
-	.no-widgets {
-		background-color: $white;
-		padding: 1.5em;
-		text-align: center;
-		border: 1px solid $border-color;
-		border-radius: 2px;
-		margin-bottom: 1.5em;
-	}
+// 	.no-widgets {
+// 		background-color: $white;
+// 		padding: 1.5em;
+// 		text-align: center;
+// 		border: 1px solid $border-color;
+// 		border-radius: 2px;
+// 		margin-bottom: 1.5em;
+// 	}
 
 /*********************
 FOOTER STYLES
