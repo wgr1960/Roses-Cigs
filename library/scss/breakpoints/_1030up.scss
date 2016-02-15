@@ -48,6 +48,10 @@ header.header {
 	background-size: 100% 100%;
 }
 
+#album-inf {
+	display: block;
+}
+
 #slide-3 {
 	max-width: 100%;
 	max-height: 100%;
@@ -176,4 +180,10 @@ header.header {
 	    .tickets {
 	    	text-align: right !important;
 	    }
-	}	
+	}
+
+.contact-section {
+	float: left;
+	padding-right: 0.75em;
+	width: 33.33%;
+}	

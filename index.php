@@ -1,67 +1,33 @@
 <?php get_header(); ?>
 
 			<div id="home">
-<<<<<<< HEAD
-				<div id="home-content">
-					<div id="slides">
-					  <ul class="slides-container">
-					    <li id="slide-1">
-					    </li>
+				<div id="slides">
+					<ul class="slides-container">
+						<li id="slide-1">
+						</li>
 
-					    <li id="slide-2"> 
-					    	<div id="music-content">
+						<li id="slide-2"> 
+							<div id="music-content">
 								<div class="album-cover">
-									<img id="album-img" src="wp-content/themes/roses-theme/library/images/album_cover.jpg" alt="Roses & Cigarettes - Self-Titled Album Cover"/>
+								<img id="album-img" src="wp-content/themes/Roses-Cigs-master/library/images/album_cover.jpg" alt="Roses & Cigarettes - Self-Titled Album Cover"/>
 								</div>
 								<div class="album-info">
-									<p>The self-titled debut Roses & Cigarettes is out now.</p>
-									<p>Featuring "Whiskey Down", "Gypsy Woman",</p>
-									<p>& "Laurel Canyon"</p>
+									<p id="album-inf">The self-titled debut Roses & Cigarettes is out now.</p>
+									<p id="album-inf">Featuring "Whiskey Down", "Gypsy Woman",</p>
+									<p id="album-inf">& "Laurel Canyon". Download Now.</p>
 									<div id='album-buttons'>
-										<a href="https://play.spotify.com/album/34MdXnBif0OrMNF0gIySce?play=true&utm_source=open.spotify.com&utm_medium=open"><img id='spotify' src='wp-content/themes/roses-theme/library/images/listen-on-spotify.png' /></a>
-										<a href="https://itunes.apple.com/us/album/roses-and-cigarettes/id987734711"><img id='itunes' src='wp-content/themes/roses-theme/library/images/itunes_logo.png' /></a>
+										<a href="https://play.spotify.com/album/34MdXnBif0OrMNF0gIySce?play=true&utm_source=open.spotify.com&utm_medium=open" target="blank"><img id='spotify' src='wp-content/themes/Roses-Cigs-master/library/images/listen-on-spotify.png' /></a>
+										<a href="https://itunes.apple.com/us/album/roses-and-cigarettes/id987734711" target="blank"><img id='itunes' src='wp-content/themes/Roses-Cigs-master/library/images/itunes_logo.png' />
+										</a>
 									</div>
-=======
-				<div id="slides">
-				  <ul class="slides-container">
-				    <li id="slide-1">
-				    </li>
-
-				    <li id="slide-2"> 
-				    	<div id="music-content">
-							<div class="album-cover">
-								<img id="album-img" src="wp-content/themes/Roses-Cigs-master/library/images/album_cover.jpg" alt="Roses & Cigarettes - Self-Titled Album Cover"/>
-							</div>
-							<div class="album-info">
-								<p id-"album-inf">The self-titled debut Roses & Cigarettes is out now.</p>
-								<p id-"album-inf">Featuring "Whiskey Down", "Gypsy Woman",</p>
-								<p id-"album-inf">& "Laurel Canyon". Download Now.</p>
-								<div id='album-buttons'>
-									<a href="https://play.spotify.com/album/34MdXnBif0OrMNF0gIySce?play=true&utm_source=open.spotify.com&utm_medium=open" target="blank"><img id='spotify' src='wp-content/themes/Roses-Cigs-master/library/images/listen-on-spotify.png' /></a>
-									<a href="https://itunes.apple.com/us/album/roses-and-cigarettes/id987734711" target="blank"><img id='itunes' src='wp-content/themes/Roses-Cigs-master/library/images/itunes_logo.png' />
-									</a>
->>>>>>> 4d369af2c84d6ad66a9fa84c23086c6f089dd31a
 								</div>
 							</div>
-					    </li>
-
-<<<<<<< HEAD
-
-					    <li id="slide-3">
-					    </li>
-					  </ul>
-					  <nav class="slides-navigation">
-					    <a href="#" class="next"><i class="ionicons ion-chevron-right"></i></a>
-					    <a href="#" class="prev"><i class="ionicons ion-chevron-left"></i></a>
-					  </nav>
-					</div>
-=======
-				  </ul>
-				  <nav class="slides-navigation">
-				    <a href="#" class="next"><i class="ionicons ion-chevron-right"></i></a>
-				    <a href="#" class="prev"><i class="ionicons ion-chevron-left"></i></a>
-				  </nav>
->>>>>>> 4d369af2c84d6ad66a9fa84c23086c6f089dd31a
+						</li>
+					</ul>
+					<nav class="slides-navigation">
+					<a href="#" class="prev"><i class="ionicons ion-chevron-left"></i></a>
+					<a href="#" class="next"><i class="ionicons ion-chevron-right"></i></a>
+					</nav>
 				</div>
 			</div>
 
@@ -153,14 +119,6 @@
 				</div>
 			</div>
 
-<!-- 			<div id="photos">
-				<div id="photos-content">
-					<div class="header-container">
-						<h1>Photos</h1>
-					</div>
-				</div>
-			</div> -->
-
 			<div id="videos">
 				<div id="video-content">
 					<div class="header-container">
@@ -189,10 +147,29 @@
 
 			<div id="contact">
 				<div id="contact-content">
-					<div class="header-container">
-						<h1>Contact</h1>
+					<h1>Contact</h1>
+					<div class="contact-section">
+						<h4>Management</h4>
+						<p>
+							<span>Gregg Bell</span>
+						</p>
+						<a href="mailto:wantedgregg@gmail.com" target="new">wantedgregg@gmail.com</a>
+					</div>
+					<div class="contact-section">
+						<h4>Contact Us</h4>
+						<p>
+							<span>Roses and Cigarettes</span>
+						</p>
+						<a href="mailto:rosesandcigarettesband@gmail.com" target="new">rosesandcigarettesband@gmail.com</a>
+					</div>
+					<div class="contact-section">
+						<h4>Site Credit</h4>
+						<p>
+							<span>Bryan Cuevas and Willie Rodriguez</span>
+						</p>
 					</div>
 				</div>
+			</div>
 
 
 <?php get_footer(); ?>
