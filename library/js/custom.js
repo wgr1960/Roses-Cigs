@@ -2,8 +2,14 @@
 CUSTOM CAROUSEL
 *******************************/
 $(document).ready(function() {
-    $('#slides').superslides()
-    $('#video-slides').superslides()
+    $('#slides').superslides({
+      play: 5000,
+      pagination: true
+    });
+    $('#video-slides').superslides({
+      play: 5000,
+      pagination: true
+    });
 });
 
 

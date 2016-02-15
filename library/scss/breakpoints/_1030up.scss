@@ -41,15 +41,21 @@ header.header {
 }
 
 
-#slide-1, #slide-3 {
+#slide-1 {
 	max-width: 100%;
 	max-height: 100%;
 	background: url('../images/r_c_slide1.jpg') no-repeat;
 	background-size: 100% 100%;
 }
 
+#slide-3 {
+	max-width: 100%;
+	max-height: 100%;
+	background: url('../images/r_c_slide3.jpg') no-repeat;
+	background-size: 100% 100%;
+}
+
 #music-content {
-	padding-top: 350px;
 
 	.album-cover {
 		float: left !important;
@@ -73,6 +79,7 @@ header.header {
     			top: 0 !important;
     			left: 0!important;
     			position: relative !important;
+
 			}
 		}
 	}
