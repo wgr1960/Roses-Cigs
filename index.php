@@ -9,23 +9,21 @@
 				    <li id="slide-2"> 
 				    	<div id="music-content">
 							<div class="album-cover">
-								<img id="album-img" src="wp-content/themes/roses-theme/library/images/album_cover.jpg" alt="Roses & Cigarettes - Self-Titled Album Cover"/>
+								<img id="album-img" src="wp-content/themes/Roses-Cigs-master/library/images/album_cover.jpg" alt="Roses & Cigarettes - Self-Titled Album Cover"/>
 							</div>
 							<div class="album-info">
-								<p>The self-titled debut Roses & Cigarettes is out now.</p>
-								<p>Featuring "Whiskey Down", "Gypsy Woman",</p>
-								<p>& "Laurel Canyon"</p>
+								<p id-"album-inf">The self-titled debut Roses & Cigarettes is out now.</p>
+								<p id-"album-inf">Featuring "Whiskey Down", "Gypsy Woman",</p>
+								<p id-"album-inf">& "Laurel Canyon". Download Now.</p>
 								<div id='album-buttons'>
-									<img id='spotify' src='wp-content/themes/roses-theme/library/images/listen-on-spotify.png' />
-									<img id='itunes' src='wp-content/themes/roses-theme/library/images/itunes_logo.png' />
+									<a href="https://play.spotify.com/album/34MdXnBif0OrMNF0gIySce?play=true&utm_source=open.spotify.com&utm_medium=open" target="blank"><img id='spotify' src='wp-content/themes/Roses-Cigs-master/library/images/listen-on-spotify.png' /></a>
+									<a href="https://itunes.apple.com/us/album/roses-and-cigarettes/id987734711" target="blank"><img id='itunes' src='wp-content/themes/Roses-Cigs-master/library/images/itunes_logo.png' />
+									</a>
 								</div>
 							</div>
 						</div>
 				    </li>
 
-
-				    <li id="slide-3">
-				    </li>
 				  </ul>
 				  <nav class="slides-navigation">
 				    <a href="#" class="next"><i class="ionicons ion-chevron-right"></i></a>
@@ -122,13 +120,13 @@
 				</div>
 			</div>
 
-			<div id="photos">
+<!-- 			<div id="photos">
 				<div id="photos-content">
 					<div class="header-container">
 						<h1>Photos</h1>
 					</div>
 				</div>
-			</div>
+			</div> -->
 
 			<div id="videos">
 				<div id="video-content">
@@ -140,13 +138,13 @@
 				<div id="video-slides">
 				  <ul class="slides-container">
 				    <li>
-				    	<iframe width="854" height="480" src="https://www.youtube.com/embed/Tx_Un9s21Wk" frameborder="0" allowfullscreen></iframe>
+				    	<iframe width="854" height="480" src="https://www.youtube.com/embed/vK4oBM28bZI" frameborder="0" allowfullscreen></iframe>
 				    </li>
 				    <li> 
-				    	<iframe width="854" height="480" src="https://www.youtube.com/embed/Tx_Un9s21Wk" frameborder="0" allowfullscreen></iframe>
+				    	<iframe width="854" height="480" src="https://www.youtube.com/embed/xShrb1SD80g" frameborder="0" allowfullscreen></iframe>
 				    </li>
 				    <li>
-				    	<iframe width="854" height="480" src="https://www.youtube.com/embed/Tx_Un9s21Wk" frameborder="0" allowfullscreen></iframe>
+				    	<iframe width="854" height="480" src="https://www.youtube.com/embed/unfKoyPGnDo" frameborder="0" allowfullscreen></iframe>
 				    </li>
 				  </ul>
 				  <nav class="slides-navigation">
@@ -157,7 +155,11 @@
 			</div>
 
 			<div id="contact">
-			</div>
+				<div id="contact-content">
+					<div class="header-container">
+						<h1>Contact</h1>
+					</div>
+				</div>
 
 
 <?php get_footer(); ?>

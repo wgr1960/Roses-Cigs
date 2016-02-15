@@ -41,19 +41,35 @@ the whole project.
 // the grid
 @import "partials/grid";
 
-
 /*********************
 IMPORTING FONTS
 F
 *********************/
+@import "_variables";
 
-@import "fonts/ionicons";
+@import "fonts/_animated";
 
-@import "fonts/ionicons-variables";
+@import "fonts/_bordered-pulled";
 
-@import "fonts/ionicons-icons";
+@import "fonts/_core";
 
-@import "fonts/ionicons-font";
+@import "fonts/_fixed-width";
+
+@import "fonts/_font-awesome";
+
+@import "fonts/_icons";
+
+@import "fonts/_larger";
+
+@import "fonts/_mixins";
+
+@import "fonts/_path";
+
+@import "fonts/_rotated-flipped";
+
+@import "fonts/_stacked";
+
+
 
 /*********************
 IMPORTING MODULES
@@ -72,15 +88,9 @@ you hate oysters, then the world is your peanut butter & jelly sandwich.
 // forms (inputs & labels)
 @import "modules/forms";
 
-// slide show
-//@import "modules/slider";
-
-// SLICK SLIDER
-//@import "modules/slick";
-
-//@import "modules/_slick-theme";
 //SuperSlides
 @import "modules/_superslides";
+
 /*********************
 BASE (MOBILE) SIZE
 This are the mobile styles. It's what people see on their phones. If
