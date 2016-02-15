@@ -1,36 +1,38 @@
 <?php get_header(); ?>
 
 			<div id="home">
-				<div id="slides">
-				  <ul class="slides-container">
-				    <li id="slide-1">
-				    </li>
+				<div id="home-content">
+					<div id="slides">
+					  <ul class="slides-container">
+					    <li id="slide-1">
+					    </li>
 
-				    <li id="slide-2"> 
-				    	<div id="music-content">
-							<div class="album-cover">
-								<img id="album-img" src="wp-content/themes/roses-theme/library/images/album_cover.jpg" alt="Roses & Cigarettes - Self-Titled Album Cover"/>
-							</div>
-							<div class="album-info">
-								<p>The self-titled debut Roses & Cigarettes is out now.</p>
-								<p>Featuring "Whiskey Down", "Gypsy Woman",</p>
-								<p>& "Laurel Canyon"</p>
-								<div id='album-buttons'>
-									<img id='spotify' src='wp-content/themes/roses-theme/library/images/listen-on-spotify.png' />
-									<img id='itunes' src='wp-content/themes/roses-theme/library/images/itunes_logo.png' />
+					    <li id="slide-2"> 
+					    	<div id="music-content">
+								<div class="album-cover">
+									<img id="album-img" src="wp-content/themes/roses-theme/library/images/album_cover.jpg" alt="Roses & Cigarettes - Self-Titled Album Cover"/>
+								</div>
+								<div class="album-info">
+									<p>The self-titled debut Roses & Cigarettes is out now.</p>
+									<p>Featuring "Whiskey Down", "Gypsy Woman",</p>
+									<p>& "Laurel Canyon"</p>
+									<div id='album-buttons'>
+										<a href="https://play.spotify.com/album/34MdXnBif0OrMNF0gIySce?play=true&utm_source=open.spotify.com&utm_medium=open"><img id='spotify' src='wp-content/themes/roses-theme/library/images/listen-on-spotify.png' /></a>
+										<a href="https://itunes.apple.com/us/album/roses-and-cigarettes/id987734711"><img id='itunes' src='wp-content/themes/roses-theme/library/images/itunes_logo.png' /></a>
+									</div>
 								</div>
 							</div>
-						</div>
-				    </li>
+					    </li>
 
 
-				    <li id="slide-3">
-				    </li>
-				  </ul>
-				  <nav class="slides-navigation">
-				    <a href="#" class="next"><i class="ionicons ion-chevron-right"></i></a>
-				    <a href="#" class="prev"><i class="ionicons ion-chevron-left"></i></a>
-				  </nav>
+					    <li id="slide-3">
+					    </li>
+					  </ul>
+					  <nav class="slides-navigation">
+					    <a href="#" class="next"><i class="ionicons ion-chevron-right"></i></a>
+					    <a href="#" class="prev"><i class="ionicons ion-chevron-left"></i></a>
+					  </nav>
+					</div>
 				</div>
 			</div>
 
