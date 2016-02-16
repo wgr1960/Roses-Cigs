@@ -167,6 +167,7 @@
 						<p>
 							<span>Bryan Cuevas and Willie Rodriguez</span>
 						</p>
+						<a href="mailto:bryancuevas4@gmail.com" target="new">bryancuevas4@gmail.com</a>
 					</div>
 				</div>
 			</div>

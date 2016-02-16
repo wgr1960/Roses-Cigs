@@ -325,25 +325,39 @@ and more scalable.
 } /* end .nav */
 
 #inner-footer {
-	padding-top: 20px;
-}
+	width: inherit;
+	height: inherit;
 
-.copyright, .social {
-	display: inline;	
-	min-height: 6vh;
-	
-}
+	.footer-container {
+		width: 50%;
+		display: inline;
+	}
 
-.social {
-	float: right;
-	min-width: 50%;
-	padding-top: 7px;
-	i  {
-		float: right;
-		padding-right: 4%;
-		color: #CCAD52;
+	.copyright-container {
+		float: left;
+	}
+
+	.social-container {
+		//float: right;
+		padding-top: 30px;
+
+		.social {
+			float: right;
+			min-width: 50%;
+			padding-top: 7px;
+			i  {
+				float: right;
+				padding-right: 4%;
+				color: #CCAD52;
+
+				&:hover {
+					color: white;
+				}
+			}
+		}
 	}
 }
+
 /******************************************************************
 CUSTOM SECTIONS
 ******************************************************************/
@@ -647,15 +661,21 @@ CUSTOM SECTIONS
 
 
 #contact {
-	height: 100vh;
-	height: 100%;
+	min-height: 35%;
+	min-height: 35vh;
 	width: 100vw;
 	width: 100%;
 	position: relative;
 
 	#contact-content {
+		height: auto;
 		text-align: center;
 		color: white;
+		top: 85px;
+
+		h1 {
+			color: $roses-gold;
+		}
 	}
 }
 
@@ -1318,26 +1338,8 @@ FOOTER STYLES
 	clear: both;
 	background-color: #201D16;
 	color: $light-gray;
+	width: 100%;
+	width: 100vw;
+	height: 85px;
+	border-top: solid $roses-gold;
 }
-
-	/*
-	if you checked out the link above:
-	http://www.alistapart.com/articles/organizing-mobile/
-	you'll want to style the footer nav
-	a bit more in-depth. Remember to keep
-	it simple because you'll have to
-	override these styles for the desktop
-	view.
-	*/
-	.footer-links {
-
-		ul {
-
-			li {}
-
-		}
-
-	} /* end .footer-links */
-
-
-	.copyright {}
