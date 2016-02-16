@@ -22,6 +22,13 @@ be seen on the Desktop.
 	height: 85px;
 }
 
+.desktop-logo {
+	display: block !important;
+}
+.mobile-logo {
+	display: none !important;
+}
+
 .action-button {
 	float: right;
 }
@@ -182,8 +189,49 @@ header.header {
 	    }
 	}
 
+#contact {
+	min-height: 35% !important;
+	min-height: 35vh !important;
+}
+
 .contact-section {
 	float: left;
 	padding-right: 0.75em;
 	width: 33.33%;
+}
+
+
+#inner-footer {
+	width: inherit;
+	height: inherit;
+
+	.footer-container {
+		width: 50%;
+		display: inline;
+		text-align: left;
+	}
+
+	.copyright-container {
+		float: left;
+	}
+
+	.social-container {
+		//float: right;
+		padding-top: 30px;
+
+		.social {
+			float: right;
+			min-width: 50%;
+			padding-top: 7px;
+			i  {
+				float: right;
+				padding-right: 4%;
+				color: #CCAD52;
+
+				&:hover {
+					color: white;
+				}
+			}
+		}
+	}
 }	
