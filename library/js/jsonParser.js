@@ -6,11 +6,9 @@ function formatDate(unformattedDate) {
 	return d.format("MMMM Do, YYYY");
 }
 
-jQuery.ajax({
-	url: 'http://api.songkick.com/api/3.0/artists/8552809/calendar.json?apikey=nb73Yx2o9AEEmBh7',
-	type: 'GET',
-	dataType: 'json',
-	success: function(data) {
+$(function() {
+	var url = "http://api.songkick.com/api/3.0/artists/8552809/calendar.json?apikey=nb73Yx2o9AEEmBh7&jsoncallback=?";
+	$.getJSON(url, function(data) {
 		var upcomingEvents = data;
 		var eventCount = upcomingEvents.resultsPage.results.event.length;
 		for(var i = 0; i < eventCount; i++) {
@@ -25,17 +23,15 @@ jQuery.ajax({
 		}
 		upcomingHTMLTable += "</div>";
 		document.getElementById("tab-1").innerHTML = upcomingHTMLTable;
-	}
+	});
 });
 
-jQuery.ajax({
-	url: 'http://api.songkick.com/api/3.0/artists/8552809/gigography.json?apikey=nb73Yx2o9AEEmBh7',
-	type: 'GET',
-	dataType: 'json',
-	success: function(data) {
-		pastEvents = data;
+$(function() {
+	var url = "http://api.songkick.com/api/3.0/artists/8552809/gigography.json?apikey=nb73Yx2o9AEEmBh7&jsoncallback=?";
+	$.getJSON(url, function(data) {
+		var pastEvents = data;
 		var eventCount = pastEvents.resultsPage.results.event.length;
-		for(var i = 0; i < eventCount; i++) {
+		for(var i = eventCount-1; i > -1; i--) {
 			var venueLocation = pastEvents.resultsPage.results.event[i].location.city;
 			var venueName 	  = pastEvents.resultsPage.results.event[i].venue.displayName;
 
@@ -47,9 +43,8 @@ jQuery.ajax({
 		}
 		pastHTMLTable += "</div>";
 		document.getElementById("tab-2").innerHTML = pastHTMLTable;
-	}
+	});
 });
-
 
 $(document).ready(function(){
 	

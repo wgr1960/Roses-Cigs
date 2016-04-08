@@ -7,7 +7,6 @@ $(document).ready(function() {
       pagination: true
     });
     $('#video-slides').superslides({
-      play: 5000,
       pagination: true
     });
 });
@@ -18,34 +17,38 @@ CUSTOM JUMPER
 *******************************/
 var scrollValue = 0;
 $(function() {
-	$("#menu-nav-links > li > a").addClass('jumper');
-	
+    $("#menu-nav-links > li > a").addClass('jumper');
+    $("#menu-nav-links > li:nth-child(6) > a").attr('target', '_blank');
+    $("#menu-nav-links > li:nth-child(6) > a").removeClass('jumper');
 
 	$(".jumper").on("click", function( e ) {
 
         e.preventDefault();
         var clickedLink = $(this).html();
 
-        if(clickedLink == "News") {
-        	scrollValue = 170;
+        if(clickedLink == "Music") {
+            scrollValue = 170;
         }
-        else if(clickedLink == "Gigs") {
+        else if(clickedLink == "News") {
         	scrollValue = 255;
         }
-        else if(clickedLink == "About") {
+        else if(clickedLink == "Gigs") {
         	scrollValue = 340;
         }
-        else if(clickedLink == "Photos") {
+        else if(clickedLink == "About") {
         	scrollValue = 425;
         }
-        else if(clickedLink == "Videos") {
+        else if(clickedLink == "Photos") {
         	scrollValue = 510;
         }
-        else if(clickedLink == "Music") {
+        else if(clickedLink == "Videos") {
         	scrollValue = 595;
         }
-        else if(clickedLink == "Contact") {
+        else if(clickedLink == "Music") {
         	scrollValue = 680;
+        }
+        else if(clickedLink == "Contact") {
+        	scrollValue = 765;
         }
 
         $("body, html").animate({ 

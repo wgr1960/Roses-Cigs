@@ -12,7 +12,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
 		<title><?php wp_title(''); ?></title>
-
+		<?php header("Access-Control-Allow-Origin", "*"); ?>
 		<?php // mobile meta (hooray!) ?>
 		<meta name="HandheldFriendly" content="True">
 		<meta name="MobileOptimized" content="320">
@@ -78,9 +78,11 @@
 			<div id="mobile-menu">
 				<ul>
 					<li><a href="#home" class='mobile-link'>Home</a></li>
+					<li><a href="#music" class='mobile-link'>Music</a></li>
 					<li><a href="#content" class='mobile-link'>News</a></li>
 					<li><a href="#gigs" class='mobile-link'>Gigs</a></li>
 					<li><a href="#about" class='mobile-link'>About</a></li>
+					<li><a href="https://squareup.com/market/roses-and-cigarettes-music" class='mobile-link'>Store</a></li>
 					<li><a href="#photos" class='mobile-link'>Photos</a></li>
 					<li><a href="#videos" class='mobile-link'>Videos</a></li>
 					<li><a href="#contact" class='mobile-link'>Contact</a></li>
