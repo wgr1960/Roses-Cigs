@@ -12,7 +12,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
 		<title><?php wp_title(''); ?></title>
-		<?php header("Access-Control-Allow-Origin", "*"); ?>
+		<?php //header("Access-Control-Allow-Origin", "*"); ?>
 		<?php // mobile meta (hooray!) ?>
 		<meta name="HandheldFriendly" content="True">
 		<meta name="MobileOptimized" content="320">
