@@ -17,3 +17,25 @@ Main stylesheet: /frontend/bulmapress/css/bulmapress.css
 
 Bulma Sass: /frontend/bulma/sass/
 Bulmapress Sass: /frontend/bulmapress/sass/
+
+Also includes custom CSS for theme
+*/
+
+@font-face {
+	font-family: RosesRustic;
+	src: url("frontend/fontawesome/fonts/Burford-Rustic-Book-Bold.otf");
+}
+
+.roses-header {
+	background-color: #201D16 !important;
+	border-bottom: #CCAD52 solid;
+}
+
+header nav a {
+	color: #fff !important;
+}
+
+header nav .is-brand {
+	font-family: RosesRustic;
+	font-size: 2rem;
+}

@@ -17,11 +17,7 @@
 <?php masterslider(1); ?>
 <section class="music">
 	<div class="container">
-		<div class="columns is-centered">
-			<div class=" column is-half">
-				<iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/136057946&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
-			</div>
-		</div>
+		<iframe src="https://open.spotify.com/embed?uri=spotify:album:34MdXnBif0OrMNF0gIySce" width="450" height="380" frameborder="0" allowtransparency="true"></iframe>
 	</div>
 </section>
 <div id="primary" class="content-area news">
