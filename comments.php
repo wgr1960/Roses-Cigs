@@ -22,7 +22,7 @@ if ( post_password_required() ):
 endif;
 ?>
 
-<div id="comments" class="comments-area section">
+<div id="comments" class="comments-area section odd-section">
 	<div class="container is-narrow">
 		<?php
 		// You can start editing here -- including this comment!

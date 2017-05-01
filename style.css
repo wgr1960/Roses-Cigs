@@ -95,9 +95,10 @@ header nav .is-brand {
 	}
 }
 
-/* Footer Link */
+/* Footer CSS */
 footer a {
-	padding: 0 8px 0 8px;
+	padding: 0 3% 0 3%;
+	color: #fcaf17;
 }
 
 /* News Posts */
@@ -105,7 +106,7 @@ footer a {
 	background-color: #1F1D19 !important;
 }
 
-.card a, .nav-links a {
+.card a, .nav-links a, .card h2 {
 	color: #fcaf17 !important;
 }
 
@@ -113,6 +114,8 @@ footer a {
 	color: #fff !important;
 }
 
-.card .title a {
+.card .title a, .card h2 {
 	font-family: RosesRustic;
 }
+
+.car
