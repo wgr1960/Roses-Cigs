@@ -99,3 +99,20 @@ header nav .is-brand {
 footer a {
 	padding: 0 8px 0 8px;
 }
+
+/* News Posts */
+.card {
+	background-color: #1F1D19 !important;
+}
+
+.card a, .nav-links a {
+	color: #fcaf17 !important;
+}
+
+.card .content {
+	color: #fff !important;
+}
+
+.card .title a {
+	font-family: RosesRustic;
+}
