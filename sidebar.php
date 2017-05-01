@@ -1,25 +1,23 @@
-<!--		
+<?php
+/**
+ * The sidebar containing the main widget area
+ *
+ * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
+ *
+ * @package Bulmapress
+ */
 
-<div id="sidebar1" class="sidebar m-all t-1of3 d-2of7 last-col cf" role="complementary">
+if ( ! is_active_sidebar( 'sidebar-1' ) ) {
+	return;
+}
+?>
 
-					<?php if ( is_active_sidebar( 'sidebar1' ) ) : ?>
-
-						<?php dynamic_sidebar( 'sidebar1' ); ?>
-
-					<?php else : ?>
-
-						<?php
-							/*
-							 * This content shows up if there are no widgets defined in the backend.
-							*/
-						?>
-
-						<div class="no-widgets">
-							<p><?php _e( 'This is a widget ready area. Add some and they will appear here.', 'bonestheme' );  ?></p>
-						</div>
-
-					<?php endif; ?>
-
-				</div>
-
--->
+<aside id="secondary" class="widget-area hero is-light odd-section" role="complementary">
+	<div class="hero-body">
+		<div class="container">
+			<div class="columns is-multiline white-text">
+				<?php dynamic_sidebar( 'sidebar-1' ); ?>
+			</div>
+		</div><!-- .container -->
+	</div>
+</aside><!-- #secondary -->
