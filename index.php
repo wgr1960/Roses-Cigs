@@ -71,4 +71,5 @@
 </section>
 
 <?php get_sidebar(); ?>
+<?php masterslider(2); ?>
 <?php get_footer(); ?>
