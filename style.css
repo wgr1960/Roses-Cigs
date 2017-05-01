@@ -94,3 +94,8 @@ header nav .is-brand {
 		transform: translateY(8%);
 	}
 }
+
+/* Footer Link */
+footer a {
+	padding: 0 8px 0 8px;
+}
