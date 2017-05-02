@@ -22,7 +22,7 @@
 <body <?php body_class(); ?>>
 	<div id="page" class="site">
 		<?php bulmapress_skip_link_screen_reader_text(); ?>
-		<header id="header" class="hero roses-header">
+		<header id="header" class="hero">
 			<div class="hero-head">
 				<div class="container">
 					<nav id="site-navigation" class="nav main-navigation" role="navigation">

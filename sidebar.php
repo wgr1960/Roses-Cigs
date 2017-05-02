@@ -12,7 +12,8 @@ if ( ! is_active_sidebar( 'sidebar-1' ) ) {
 }
 ?>
 
-<aside id="secondary" class="widget-area hero is-light odd-section" role="complementary">
+<aside id="secondary" class="widget-area hero is-light odd-section bio-section" role="complementary">
+	<h2 class="roses-header-text has-text-centered">Bio</h2>
 	<div class="hero-body">
 		<div class="container">
 			<div class="columns is-multiline white-text">

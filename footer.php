@@ -12,9 +12,9 @@
 
 </div><!-- #content -->
 
-<footer id="colophon" class="site-footer hero odd-section" role="contentinfo">
+<footer id="colophon" class="site-footer hero footer-section" role="contentinfo">
 	<div class="container">
-		<div class="hero-body has-text-centered">
+		<div class="hero-body has-text-centered" id="footerBody">
 			<div class="site-info">
 				<a href="https://instagram.com/rosesandcigarettesband/" target="blank"><i class="fa fa-instagram fa-lg"></i></a>
 	            <a href="https://twitter.com/rosescigarette" target="blank"><i class="fa fa-twitter fa-lg"></i></a>

@@ -16,18 +16,18 @@
 <?php get_header(); ?>
 <?php masterslider(1); ?>
 <section id="music" class="even-section">
-	<div class="container text-center">
+	<div class="container has-text-centered">
 		<h2 class="roses-header-text">Music</h2>
 		<div class="columns">
 			<div class="column is-half album-promo">
-				<img class="album-cover-image roses-box-shadow" src="/wp-content/themes/bulmapress-master/images/roses_album_cover.png"/>
-				<p class="white-text">Buy or stream the self-titled album now!</p>
+				<img class="album-cover-image roses-box-shadow" src="/wp-content/themes/Roses-Cigs/images/roses_album_cover.png"/>
+				<p class="white-text top-margin">Buy or stream the self-titled album now!</p>
 				<!-- Streaming Images -->
 				<div class="column">
-					<i class="fa fa-apple streaming-icon yellow-text" aria-hidden="true"></i>
-					<i class="fa fa-spotify streaming-icon yellow-text" aria-hidden="true"></i>
-					<i class="fa fa-soundcloud streaming-icon yellow-text" aria-hidden="true"></i>
-					<i class="fa fa-amazon streaming-icon yellow-text" aria-hidden="true"></i>
+					<a class="streaming-icon" href="https://itunes.apple.com/us/artist/roses-and-cigarettes/id987734712"><i class="fa fa-apple  yellow-text"aria-hidden="true"></i></a>
+					<a class="streaming-icon" href="https://play.spotify.com/artist/2JZd7083SkKl8xV7zS2xIS?play=true&utm_source=open.spotify.com&utm_medium=open"><i class="fa fa-spotify yellow-text" aria-hidden="true"></i></a>
+					<a class="streaming-icon" href="https://soundcloud.com/roses-and-cigarettes"><i class="fa fa-soundcloud yellow-text" aria-hidden="true"></i></a>
+					<a class="streaming-icon" href="https://www.amazon.com/Roses-Cigarettes/dp/B00WZU0XAA"><i class="fa fa-amazon yellow-text" aria-hidden="true"></i></a>
 				</div>
 			</div>
 			<div class="column is-half">
@@ -37,7 +37,7 @@
 	</div>
 </section>
 <section id="primary" class="content-area odd-section">
-	<h2 class="roses-header-text text-center">News</h2>
+	<h2 class="roses-header-text has-text-centered">News</h2>
 	<main id="main" class="site-main wrapper" role="main">
 		<?php if ( have_posts() ) : ?>
 			<div class="container">
@@ -61,7 +61,7 @@
 </section><!-- #primary -->
 
 <section id="gigs" class="even-section">
-	<h2 class="roses-header-text text-center">Gigs</h2>
+	<h2 class="roses-header-text has-text-centered">Gigs</h2>
 	<div class="container">
 		<div class="columns">
 			<div class="column is-12">
@@ -70,6 +70,47 @@
 	</div>
 </section>
 
+
+<!-- Biography -->
 <?php get_sidebar(); ?>
-<?php masterslider(2); ?>
+
+<!-- Gallery -->
+<section id="gallery" class="even-section">
+	<h2 class="roses-header-text has-text-centered">Photos</h2>
+	<div class="columns">
+		<div class="column">
+			<?php echo do_shortcode('[FinalTilesGallery id="1"]'); ?>
+		</div>
+	</div>
+</section>
+
+<!-- Videos -->
+<section id="videos" class="odd-section">
+	<div class="columns">
+		<div class="column">
+			<h2 class="roses-header-text has-text-centered">Videos</h2>
+		</div>
+	</div>
+	<?php masterslider(2); ?>
+</section>
+
+
+<!-- Contact -->
+<section id="contact" class="even-section">
+	<h2 class="roses-header-text has-text-centered">Contact</h2>
+	<div class="columns">
+		<div class="column is-half">
+			<p class="has-text-centered white-text">Management</p>
+			<p class="has-text-centered">Gregg Bell | Wanted Management</p>
+			<p class="has-text-centered">wantedgregg@gmail.com</p>
+		</div>
+		<div class="column is-half">
+			<p class="has-text-centered white-text">Band Booking</p>
+			<p class="has-text-centered">Ann Marie Jones</p>
+			<p class="has-text-centered">rosesandcigarettesband@gmail.com</p>
+		</div>
+	</div>
+
+</section>
+<!-- Footer -->
 <?php get_footer(); ?>

@@ -1,7 +1,7 @@
 var monthNames = ["January", "February", "March", "April", "May", "June",
   "July", "August", "September", "October", "November", "December"];
 
-var upcomingHTMLTable	= "<table class='table'>";
+var upcomingHTMLTable	= "<table class='table gigs-list'>";
 
 function formatDate(unformattedDate) {
 	var d = new Date(unformattedDate);
