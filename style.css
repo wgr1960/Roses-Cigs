@@ -31,12 +31,12 @@ Also includes custom CSS for theme
 	font-size: 45px;
 	margin-bottom: 25px;
 	font-family: RosesRustic;
-	color: #fcaf17;
+	color: darkgrey;
 }
 
 #header{
-	background: linear-gradient(rgba(32, 29, 22, 0.95), rgba(32, 29, 22, 0.95)) !important;
-	border-bottom: 3px solid #fcaf17;
+	background: #100F12 !important;
+	border-bottom: 3px solid maroon;
 }
 
 header nav a {
@@ -54,7 +54,7 @@ header nav .is-brand {
 }
 
 .yellow-text {
-	color: #CCAD52;
+	color: darkgrey;
 }
 
 /* Box Shadows */
@@ -67,7 +67,14 @@ header nav .is-brand {
 
 /* Sections */
 .even-section {
-	background: -webkit-linear-gradient(top, #201d16 1%,#2b261d 55%,#494332 100%);
+	background: 
+	-webkit-linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url('/wp-content/themes/Roses-Cigs/images/even_section_wallpaper.jpg') center center no-repeat;
+	background: 
+	-moz-linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url('/wp-content/themes/Roses-Cigs/images/even_section_wallpaper.jpg') center center no-repeat;
+	background: 
+	-o-linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url('/wp-content/themes/Roses-Cigs/images/even_section_wallpaper.jpg') center center no-repeat;
+	background: 
+	linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url('/wp-content/themes/Roses-Cigs/images/even_section_wallpaper.jpg') center center no-repeat;
 	padding: 35px 0;
 }
 
@@ -78,6 +85,10 @@ header nav .is-brand {
 
 .bio-section {
 	height: 250px;
+}
+
+#gallery {
+	padding: 50px;
 }
 
 .bio-section .container {
@@ -112,6 +123,7 @@ header nav .is-brand {
 	-moz-transform: scale(1.3);
 	-webkit-transform: scale(1.3);
 	transform: scale(1.3);
+	color: #E10000;
 }
 
 .gigs-table tbody tr {
@@ -190,5 +202,9 @@ footer a {
 
 	#music {
 		padding-bottom: 0;
+	}
+
+	#gallery {
+		padding:30px;
 	}
 }
