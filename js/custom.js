@@ -21,7 +21,6 @@ function formatDate(unformattedDate) {
 			return resp.json();
 		})
 		.then(function(data) {
-			console.log(data);
 			var upcomingEvents = data;
 			var eventCount = upcomingEvents.resultsPage.results.event.length;
 			upcomingHTMLTable += "<tbody>";
@@ -37,7 +36,6 @@ function formatDate(unformattedDate) {
 			upcomingHTMLTable += "</tbody></div>";
 			var targetDiv = document.getElementById('gigs').getElementsByClassName("container")[0];
 			targetDiv.innerHTML = upcomingHTMLTable;
-			console.log(upcomingHTMLTable);	
 		})
 		.catch(function(err) {
 
