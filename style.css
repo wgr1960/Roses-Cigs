@@ -218,7 +218,7 @@ header nav .is-brand {
 }
 
 .card a, .nav-links a, .card h2 {
-	color: #fcaf17 !important;
+	color: maroon !important;
 }
 
 .card .content {
@@ -236,12 +236,12 @@ header nav .is-brand {
 /* Footer CSS */
 footer {
 	background: linear-gradient(rgba(32, 29, 22, 0.95), rgba(32, 29, 22, 0.95));
-	border-top: 3px solid #fcaf17;
+	border-top: 3px solid maroon;
 }
 
 footer a {
 	padding: 0 15px;
-	color: #fcaf17;
+	color: maroon;
 }
 
 #footerBody {
