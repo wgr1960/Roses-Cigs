@@ -67,14 +67,39 @@ header nav .is-brand {
 
 /* Sections */
 .even-section {
+
+}
+
+#menu-main-menu {
+	background-color: #100F12;
+}
+
+.menu-toggle:hover, .menu-toggle:focus, .menu-toggle:is-active {
+	background-color: #100F12;
+	color: white;
+}
+
+#music {
 	background: 
-	-webkit-linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url('/wp-content/themes/Roses-Cigs/images/even_section_wallpaper.jpg') center center no-repeat;
+	-webkit-linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url('/wp-content/themes/Roses-Cigs/images/music_section_wallpaper.jpg') center center no-repeat;
 	background: 
-	-moz-linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url('/wp-content/themes/Roses-Cigs/images/even_section_wallpaper.jpg') center center no-repeat;
+	-moz-linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url('/wp-content/themes/Roses-Cigs/images/music_section_wallpaper.jpg') center center no-repeat;
 	background: 
-	-o-linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url('/wp-content/themes/Roses-Cigs/images/even_section_wallpaper.jpg') center center no-repeat;
+	-o-linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url('/wp-content/themes/Roses-Cigs/images/music_section_wallpaper.jpg') center center no-repeat;
 	background: 
-	linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url('/wp-content/themes/Roses-Cigs/images/even_section_wallpaper.jpg') center center no-repeat;
+	linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url('/wp-content/themes/Roses-Cigs/images/music_section_wallpaper.jpg') center center no-repeat;
+	padding: 35px 0;
+}
+
+#gigs {
+	background: 
+	-webkit-linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url('/wp-content/themes/Roses-Cigs/images/gigs_section_wallpaper.jpg') center center no-repeat;
+	background: 
+	-moz-linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url('/wp-content/themes/Roses-Cigs/images/gigs_section_wallpaper.jpg') center center no-repeat;
+	background: 
+	-o-linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url('/wp-content/themes/Roses-Cigs/images/gigs_section_wallpaper.jpg') center center no-repeat;
+	background: 
+	linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url('/wp-content/themes/Roses-Cigs/images/gigs_section_wallpaper.jpg') center center no-repeat;
 	padding: 35px 0;
 }
 
@@ -84,18 +109,27 @@ header nav .is-brand {
 }
 
 .bio-section {
-	height: 250px;
+	/*height: 350px;*/
+	background: 
+	-webkit-linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url('/wp-content/themes/Roses-Cigs/images/bio_section_wallpaper.jpg') top center no-repeat;
+	background: 
+	-moz-linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url('/wp-content/themes/Roses-Cigs/images/bio_section_wallpaper.jpg') top center no-repeat;
+	background: 
+	-o-linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url('/wp-content/themes/Roses-Cigs/images/bio_section_wallpaper.jpg') top center no-repeat;
+	background: 
+	linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url('/wp-content/themes/Roses-Cigs/images/bio_section_wallpaper.jpg') top center no-repeat;
+	padding: 35px 0;
 }
 
 #gallery {
 	padding: 50px;
 }
 
-.bio-section .container {
+/*.bio-section .container {
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
-}
+}*/
 
 /* Components */
 .album-cover-image {
@@ -126,9 +160,35 @@ header nav .is-brand {
 	color: #E10000;
 }
 
+.gigs-table {
+	border: none;
+}
+
 .gigs-table tbody tr {
-	background-color: #201D16;
-	color: black;
+	background-color: #260A0A;
+	color: white;
+	font-size: 16px;
+	box-shadow: 0 8px 10px 1px rgba(0,0,0,0.14), 0 3px 14px 2px rgba(0,0,0,0.12), 0 5px 5px -3px rgba(0,0,0,0.3);
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+	margin: 0;
+}
+
+.gigs-table tbody tr:hover {
+	background-color: #260A0A;
+	border: 0;
+	-moz-transform: scale(1.05);
+	-webkit-transform: scale(1.05);
+	transform: scale(1.05);
+}
+
+.gigs-table tbody tr td {
+	padding: 20px;
+}
+
+.gigs-table tbody tr td a {
+	color: yellow;
 }
 
 .card {
@@ -206,5 +266,14 @@ footer a {
 
 	#gallery {
 		padding:30px;
+	}
+
+	.album-cover-image {
+		height: 300px;
+		width: 300px;
+	}
+
+	.gigs-table tbody tr td {
+		padding: 15px;
 	}
 }
