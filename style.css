@@ -103,6 +103,14 @@ header nav .is-brand {
 	padding: 35px 0;
 }
 
+#gallery, #contact {
+	background-color: #100F12;
+}
+
+#contact {
+	padding-bottom: 30px;
+}
+
 .odd-section {
 	background: linear-gradient(rgba(32, 29, 22, 0.95), rgba(32, 29, 22, 0.95));
 	padding: 35px 0;
@@ -235,13 +243,13 @@ header nav .is-brand {
 
 /* Footer CSS */
 footer {
-	background: linear-gradient(rgba(32, 29, 22, 0.95), rgba(32, 29, 22, 0.95));
+	background: #100F12 !important;
 	border-top: 3px solid maroon;
 }
 
 footer a {
 	padding: 0 15px;
-	color: maroon;
+	color: darkgrey;
 }
 
 #footerBody {
