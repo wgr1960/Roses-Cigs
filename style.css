@@ -26,6 +26,15 @@ Also includes custom CSS for theme
 	src: url("frontend/fontawesome/fonts/Burford-Rustic-Book-Bold.otf");
 }
 
+strong {
+	color: peachpuff !important;
+}
+
+/* Headline Banner */
+.ms-nav-next, .ms-nav-prev {
+	display: none;
+}
+
 /* Headers */
 .roses-header-text {
 	font-size: 45px;
@@ -107,13 +116,18 @@ header nav .is-brand {
 	background-color: #100F12;
 }
 
+/* Newsletter */
+#newsletter {
+	    background: linear-gradient(rgba(32, 29, 22, 0.95), rgba(32, 29, 22, 0.95));
+}
+
 #contact {
 	padding-bottom: 30px;
 }
 
 .odd-section {
 	background: linear-gradient(rgba(32, 29, 22, 0.95), rgba(32, 29, 22, 0.95));
-	padding: 35px 0;
+	padding: 35px 0 0 0;
 }
 
 .bio-section {
@@ -226,7 +240,7 @@ header nav .is-brand {
 }
 
 .card a, .nav-links a, .card h2 {
-	color: maroon !important;
+	color: #B80000  !important;
 }
 
 .card .content {
@@ -248,7 +262,7 @@ footer {
 }
 
 footer a {
-	padding: 0 15px;
+	padding: 0 3%;
 	color: darkgrey;
 }
 
@@ -256,10 +270,6 @@ footer a {
 	padding: 25px 20px;
 }
 
-/* Newsletter */
-#newsletter h2 {
-	font-family: RosesRustic;
-}
 
 /* Media Queries */
 @media (min-width: 998px) {
