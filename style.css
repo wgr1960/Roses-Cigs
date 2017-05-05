@@ -256,6 +256,11 @@ footer a {
 	padding: 25px 20px;
 }
 
+/* Newsletter */
+#newsletter h2 {
+	font-family: RosesRustic;
+}
+
 /* Media Queries */
 @media (min-width: 998px) {
 	.album-promo {
