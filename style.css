@@ -316,6 +316,10 @@ footer a {
 }
 
 @media (max-width: 768px) {
+	body {
+		overflow: hidden;
+	}
+
 	.streaming-icon i {
 		padding-bottom: 10px;
 	}
