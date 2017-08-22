@@ -1,43 +1,29 @@
+<?php
+/**
+ * The template for displaying 404 pages (not found)
+ *
+ * @link https://codex.wordpress.org/Creating_an_Error_404_Page
+ *
+ * @package Bulmapress
+ */
+?>
+
 <?php get_header(); ?>
 
-			<div id="content">
-
-				<div id="inner-content" class="wrap cf">
-
-					<main id="main" class="m-all t-2of3 d-5of7 cf" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
-
-						<article id="post-not-found" class="hentry cf">
-
-							<header class="article-header">
-
-								<h1><?php _e( 'Epic 404 - Article Not Found', 'bonestheme' ); ?></h1>
-
-							</header>
-
-							<section class="entry-content">
-
-								<p><?php _e( 'The article you were looking for was not found, but maybe try looking again!', 'bonestheme' ); ?></p>
-
-							</section>
-
-							<section class="search">
-
-									<p><?php get_search_form(); ?></p>
-
-							</section>
-
-							<footer class="article-footer">
-
-									<p><?php _e( 'This is the 404.php template.', 'bonestheme' ); ?></p>
-
-							</footer>
-
-						</article>
-
-					</main>
-
-				</div>
-
-			</div>
+<div id="primary" class="content-area section">
+	<main id="main" class="site-main" role="main">
+		<div class="container">
+			<section class="error-404 not-found">
+				<header class="page-header wrapper">
+					<h1 class="title is-1 page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'bulmapress' ); ?></h1>
+				</header><!-- .page-header -->
+				<div class="page-content content">
+					<p class="text"><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try the search?', 'bulmapress' ); ?></p>
+					<?php get_search_form(); ?>
+				</div><!-- .page-content -->
+			</section><!-- .error-404 -->
+		</div><!-- .container -->
+	</main><!-- #main -->
+</div><!-- #primary -->
 
 <?php get_footer(); ?>
